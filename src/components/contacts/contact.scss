@@ -1,0 +1,164 @@
+@import "../../App.scss";
+
+
+
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+
+
+    }
+
+
+    .wrapper{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        @include mobile{
+            flex-direction: column;
+            gap: 35px;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+
+    .textContainer{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile{
+               gap: 30px;
+
+
+        }
+
+
+
+
+        h1{
+            font-size: 75px;
+            line-height: 98px;
+
+            @include mobile{
+                font-size: 30px;
+                line-height: 65px;
+
+
+            }
+
+
+        }
+
+        h2{
+            @include mobile{
+                font-size: 22px;
+                margin-bottom: 5px;
+
+            }
+
+        }
+
+        span{
+            font-weight: 200;
+
+            @include mobile{
+                font-size: 15px;
+
+
+
+            }
+
+        }
+    }
+
+    .formContainer{
+        flex:1;
+        position: relative;
+
+
+        @include mobile{
+            padding: 20px;
+            width: 100%;
+
+
+         }
+
+
+        .phoneSvg{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            @include mobile{
+               display: none;
+               transform: none !important;
+
+              }
+        }
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            
+
+            input, textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid gray;
+                color: white;
+                border-radius: 10px;
+
+                @include mobile{
+                    padding: 15px;
+
+
+
+
+                }
+
+
+
+            }
+
+
+
+            button{
+                padding: 15px;
+                background-color: orange;
+                border: none;
+                border-radius: 10px;
+                font-family:"DM Sans";
+                font-weight: 500;
+                font-size: 15px;
+                cursor: pointer;
+
+                @include mobile{
+                   padding: 7px;
+
+                }
+
+            }
+        }
+    }
+    }
+
+}
